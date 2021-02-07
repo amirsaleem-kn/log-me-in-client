@@ -72,7 +72,7 @@ export default () => {
 
     return (
         <div className = {Styles.resetWrapper}>
-            { showSuccess ? <SuccessBox message={`Password reset was successful!`} component={<RedirectToLogin />} />  : <form onSubmit = {submit}>
+            { showSuccess ? <SuccessBox message={`Password reset was successful!`} component={RedirectToLogin} />  : <form onSubmit = {submit}>
                 <p className = {Styles.heading}>Reset Your Password</p>
                 <input type = "text" value = {username} name={"username"} onChange={onInputChange} placeholder = "Enter your username" />
                 <input type = "password" value = {newPassword} name={"password"} onChange={onInputChange} placeholder = "Enter New Password" />

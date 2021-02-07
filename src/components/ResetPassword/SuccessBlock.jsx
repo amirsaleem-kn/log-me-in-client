@@ -7,7 +7,7 @@ export default ({ message, component }) => {
         <div className={Styles.successBlock}>
             <FaCheckCircle />
             <p className = {Styles.heading}>{message}</p>
-            {component ? component : null}
+            {component ? <component /> : null}
         </div>
     )
 }
