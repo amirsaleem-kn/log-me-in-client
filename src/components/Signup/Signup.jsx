@@ -72,6 +72,7 @@ class Signup extends React.Component {
     }
 
     render() {
+        // test
         const { form, serverCall, error } = this.state;
         const { firstName, lastName, email, phone, username, password } = form;
         const loginBtnText = serverCall ? "Creating a new account" : "Create Account";
