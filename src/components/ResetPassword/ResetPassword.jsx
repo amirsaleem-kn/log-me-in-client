@@ -11,6 +11,7 @@ const ResetPassword = () => {
     const [ serverCall, setServerCall ] = useState(false);
     const [ showSuccess, setShowSuccess ] = useState(false);
 
+    
     function onInputChange(e) {
         setError(null);
         switch(e.target.name) {
