@@ -3,6 +3,7 @@ class Request {
 
     static init(options) {
 
+        console.log(process.env.APIURL);
         options.baseURL = process.env.APIURL;
         if (options.headers) {
             options.headers = {

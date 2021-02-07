@@ -6,12 +6,10 @@ import { navigate } from "gatsby-link";
 
 export default () => {
 
-    useEffect(() => {
-        // This should be a HOC, due to less time doing this
-        if (sessionStorage.getItem("login") !== "true") {
-            navigate("/login");
-        }
-    }, []);
+    if (sessionStorage.getItem("login") !== "true") {
+        navigate("/login");
+        return null;
+    }
 
     return (
         <main className = {Styles.home}>
