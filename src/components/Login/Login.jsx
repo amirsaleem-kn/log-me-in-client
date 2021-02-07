@@ -55,10 +55,8 @@ const Login = () => {
             method: "POST",
             headers: {
                 "Authorization": auth,
-                "Content-Type": "application/json",
-                "x-api-key": `6dbb951682c7c81cc30a06fc311227be`,
             },
-            url: "http://localhost:8082/api/private/user/login",
+            url: "/api/private/user/login",
         };
         try {
             setServerCall(true);

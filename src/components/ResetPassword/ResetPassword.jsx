@@ -31,14 +31,10 @@ const ResetPassword = () => {
         }
         const options = {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "x-api-key": `6dbb951682c7c81cc30a06fc311227be`,
-            },
             data: {
                 email
             },
-            url: "http://localhost:8082/api/private/user/reset/password/link",
+            url: "/api/private/user/reset/password/link",
         };
         try {
             setServerCall(true);

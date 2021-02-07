@@ -45,16 +45,12 @@ export default () => {
 
         const options = {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "x-api-key": `6dbb951682c7c81cc30a06fc311227be`,
-            },
             data: {
                 password: newPassword,
                 username,
                 requestId
             },
-            url: "http://localhost:8082/api/private/user/reset/password/",
+            url: "/api/private/user/reset/password/",
         };
         try {
             setServerCall(true);

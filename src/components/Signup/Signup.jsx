@@ -52,12 +52,8 @@ class Signup extends React.Component {
         }
         const options = {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "x-api-key": `6dbb951682c7c81cc30a06fc311227be`,
-            },
             data: form,
-            url: "http://localhost:8082/api/private/user",
+            url: "/api/private/user",
         };
 
         try {
