@@ -3,15 +3,15 @@ class Request {
 
     static init(options) {
 
-        options.baseUrl = `https://amirsaleem.in`; // This should come from .env file
+        options.baseURL = process.env.APIURL;
         if (options.headers) {
             options.headers = {
                 "Content-Type": "application/json",
-                "x-api-key": `6dbb951682c7c81cc30a06fc311227be`, // this should not be exposed to version controler, due to less time, doing this.
+                "x-api-key": process.env.APIKEY,
             }
         } else {
             options.headers["Content-Type"] = "application/json";
-            options.headers["x-api-key"] = `6dbb951682c7c81cc30a06fc311227be`;
+            options.headers["x-api-key"] = process.env.APIKEY;
         }
         return axios(options);
 
