@@ -2,17 +2,15 @@ import axios from "axios";
 class Request {
 
     static init(options) {
-
-        console.log(process.env.APIURL);
-        options.baseURL = process.env.APIURL;
+        options.baseURL = "https://amirsaleem.in";
         if (options.headers) {
             options.headers = {
                 "Content-Type": "application/json",
-                "x-api-key": process.env.APIKEY,
+                "x-api-key": "6dbb951682c7c81cc30a06fc311227be",
             }
         } else {
             options.headers["Content-Type"] = "application/json";
-            options.headers["x-api-key"] = process.env.APIKEY;
+            options.headers["x-api-key"] = "6dbb951682c7c81cc30a06fc311227be";
         }
         return axios(options);
 
