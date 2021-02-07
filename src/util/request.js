@@ -2,6 +2,7 @@ import axios from "axios";
 class Request {
 
     static init(options) {
+
         options.baseUrl = process.env.APIURL;
         if (options.headers) {
             options.headers = {
@@ -13,6 +14,7 @@ class Request {
             options.headers["x-api-key"] = process.env.APIKEY;
         }
         return axios(options);
+
     }
 
 }
