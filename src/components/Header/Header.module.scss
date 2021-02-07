@@ -1,0 +1,21 @@
+@import "../../styles/colors.scss";
+@import "../../styles/media-queries.scss";
+
+.header {
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    button {
+        background-color: $accent;
+        color: white;
+        border: 1px solid $accent;
+        border-radius: 4px;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    @include respond-to("medium") {
+        
+    }
+}

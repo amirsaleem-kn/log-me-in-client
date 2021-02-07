@@ -2,5 +2,14 @@ module.exports = {
   siteMetadata: {
     title: "LogMeInClient",
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-sitemap"],
+  
+  plugins: [
+    "gatsby-plugin-use-query-params",
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        useResolveUrlLoader: true,
+      },
+    },
+  ],
 };

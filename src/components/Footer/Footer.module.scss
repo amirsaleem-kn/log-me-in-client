@@ -1,0 +1,10 @@
+@import "../../styles/colors.scss";
+@import "../../styles/media-queries.scss";
+
+.footer {
+    padding: 2rem 3rem;
+    border-top: 1px solid $secondary-light;
+    @include respond-to("medium") {
+        
+    }
+}

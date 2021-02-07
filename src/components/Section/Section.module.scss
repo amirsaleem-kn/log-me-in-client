@@ -1,0 +1,11 @@
+@import "../../styles/media-queries.scss";
+
+.section {
+    margin: 1rem 0;
+    @include respond-to("medium") {
+        margin: 1rem 0;
+    }
+    @include respond-to("large") {
+        margin: 1rem 0;
+    }
+}

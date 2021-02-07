@@ -1,0 +1,56 @@
+@import "./colors.scss";
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px; // this defines base for rem, 1 REM = 10px
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $primary;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+    color: $secondary_dark;
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 2.2rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+div {
+    position: relative;
+}
