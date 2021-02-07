@@ -6,9 +6,11 @@ import { navigate } from "gatsby-link";
 
 export default () => {
 
-    if (sessionStorage.getItem("login") !== "true") {
-        navigate("/login");
-        return null;
+    if (typeof sessionStorage !== "undefined") {
+        if (sessionStorage.getItem("login") !== "true") {
+            navigate("/login");
+            return null;
+        }
     }
 
     return (
