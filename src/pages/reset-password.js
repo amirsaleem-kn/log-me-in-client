@@ -1,9 +1,10 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
 import ResetPassword from "../components/ResetPassword/ResetPassword";
+import Container from "../components/Container/Container";
 
 export default () => (
-    <Layout fullPage = {false}>
+    <Container fullPage = {false}>
         <ResetPassword />
-    </Layout>
+    </Container>
 )

@@ -1,11 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
 import Signup from "../components/Signup/Signup";
+import Container from "../components/Container/Container";
 
 export default () => {
     return (
-        <Layout fullPage = {false}>
+        <Container fullPage = {false}>
             <Signup />
-        </Layout>
+        </Container>
     )
 }
